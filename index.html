@@ -8,6 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css" rel="stylesheet">
+    <script src="https://toolnovanext.github.io/scripts/navigation.js" defer></script>
+    <script src="https://toolnovanext.github.io/scripts/notification.js" defer></script>
     
     <style>
         :root {
@@ -254,9 +256,10 @@
 
     <div class="chat-container">
         <header class="chat-header">
-            <h1>Question AI</h1>
-            <button id="deleteChatBtn" class="hidden">Delete Chat</button>
+
         </header>
+            <h1 id="main">Question AI</h1>
+            <button id="deleteChatBtn" class="hidden">Delete Chat</button>
 
         <main id="chatArea" class="chat-area"></main>
 
@@ -271,7 +274,7 @@
     <script>
     document.addEventListener('DOMContentLoaded', () => {
         // --- CONFIGURATION ---
-        const API_KEY = 'YOUR_API_KEY'; // IMPORTANT: Replace with your actual Gemini API key
+        const API_KEY = 'AIzaSyC2Fsjk3yCRA8hDVYgg5LlMn4sxwoJJaWU';
         const MODEL_NAME = 'gemini-1.5-flash';
 
         // --- DOM ELEMENTS ---
