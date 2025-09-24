@@ -430,7 +430,7 @@
         const text = element.textContent;
         const langCode = languageCodeMap['English'] || 'en'; // Default to English
         const encodedText = encodeURIComponent(text);
-        const response = await fetch(`https://www.techassistantforblind.com/modules/gtts.php?text=${encodedText}&lang=${langCode}`, {
+        const response = await fetch(`https://www.techassistantforblind.com/modules/audio.php?text=${encodedText}&lang=${langCode}`, {
           method: 'GET',
           headers: { 'Referer': 'https://translate.google.com' }
         });
